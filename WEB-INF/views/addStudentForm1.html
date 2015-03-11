@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">    
+  </head>
+  <body>
+    <div class="container">
+      <!-- <table width="50%" class="table table-condensed">
+          <tr>
+            <td><img src="dist/img/logo624.jpg" alt="Smiley face" height="42" width="60"/></td>
+            <td><h1>IET Bhaddal Ropar </h1></td>
+          </tr>
+        </table> -->
+      <nav class="navbar">
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">IET Bhaddal</a>
+        </div>
+        <ul class="nav nav-pills">
+          <li role="presentation"><a href="../../index.html">Dashboard</a></li>
+          <li role="presentation"><a href="#">Profile</a></li>
+          <li role="presentation" class="active">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              Student <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation" class="active"><a href="#">Add Student</a></li>
+                <li role="presentation"><a href="#">Edit Student</a></li>
+                <li role="presentation"><a href="search_student.html">Search Student</a></li>
+                <li role="presentation"><a href="#">Delete Student</a></li>
+              </ul>
+          </li>
+          <li role="presentation">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              Faculty <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation"><a href="#">Add Faculty</a></li>
+                <li role="presentation"><a href="#">Edit Faculty</a></li>
+                <li role="presentation"><a href="#">Search Faculty</a></li>
+                <li role="presentation"><a href="#">Delete Faculty</a></li>
+              </ul>
+          </li>
+          <li role="presentation" class="disabled"><a href="#">Messages</a></li>          
+        </ul>
+      </div>
+      </nav>
+      <form id="addStudentForm">
+        <h2><i>ADD STUDENT</i></h2>
+      	<table width="50%" class="table table-striped table-condensed">
+        <thead>
+          <tr>
+          	<ol class="breadcrumb">
+						  <li><a href="#">Home</a></li>
+						  <li><a href="#">Add Student</a></li>
+						  <li class="active">Page 1</li>
+						</ol>
+          </tr>
+          <tr><h3>Student Details </h3></tr>
+        </thead>
+        <tbody >
+	      <tr>
+	        <th>Reg.No </th>
+	        <td><input type="text" name="regNumber"/></td>
+        </tr>
+        <tr>
+	        <th>First Name </th>
+	        <td><input type="text" name="regNumber"/></td>
+	        <th>Middle Name </th>
+	        <td><input type="text" name="regNumber"/></td>
+	        <th>Last Name </th>
+	        <td><input type="text" name="regNumber"/></td>
+        </tr>
+        <tr>
+	        <th>Gender </th>
+	        <td><input type="radio" name="sex" value="male">Male
+							<input type="radio" name="sex" value="female">Female
+					</td>
+					<th>Date of Birth </th>
+	        <td><input type="text" name="regNumber"/></td>
+	        <th>Blood Group </th>
+	        <td>
+	        	<select>
+						  <option value="ap">A+</option>
+						  <option value="an">A-</option>
+						  <option value="bp">B+</option>
+						  <option value="bn">B-</option>
+						</select>
+					</td>
+        </tr>
+        <tr>
+          <th>Course</th>
+          <td>
+            <select>
+              <option value="ap">B.Tech</option>
+              <option value="an">M.Tech</option>
+              <!-- <option value="bp">BBA</option>
+              <option value="bn">MBA</option>
+              <option value="bn">Architechture</option>
+              <option value="bn">BCA</option>
+              <option value="bn">MCA</option> -->
+            </select>
+          </td>
+          <th>Branch</th>
+          <td>
+            <select>
+              <option value="ap">ME</option>
+              <option value="an">CSE</option>
+              <option value="bp">IT</option>
+              <option value="bn">ECE</option>
+              <option value="bn">EEE</option>
+              <option value="bn">EIE</option>
+            </select>
+          </td>
+        </tr>
+        <!-- <tr>
+	        <th>Branch</th>
+	        <td>
+            <select>
+              <option value="ap">ME</option>
+              <option value="an">CSE</option>
+              <option value="bp">IT</option>
+              <option value="bn">ECE</option>
+              <option value="bn">EEE</option>
+              <option value="bn">EIE</option>
+            </select>
+          </td>
+        </tr> -->        
+        </tbody>
+      </table>
+      <table width="50%" class="table table-striped table-condensed">
+      	<thead>
+      		<th><h3>Current Address</h3></th>
+      	</thead>
+      	<tbody>
+      		<tr>
+		        <th>Street Address 1 </th>
+		        <td><input type="text" name="regNumber"/></td>
+		        <th>Street Address 2 </th>
+		        <td><input type="text" name="regNumber"/></td>
+		        <th>Street Address 3 </th>
+		        <td><input type="text" name="regNumber"/></td>
+        	</tr>
+        	<tr>
+		        <th>City </th>
+		        <td><input type="text" name="regNumber"/></td>
+        	</tr>
+        	<tr>
+		        <th>State </th>
+		        <td><input type="text" name="regNumber"/></td>
+		        <th>Zipcode </th>
+		        <td><input type="text" name="regNumber"/></td>
+        	</tr>
+        	<tr>
+		        <th>Country </th>
+		        <td><input type="text" name="regNumber"/></td>
+        	</tr>        
+      	</tbody>
+      </table>
+      <table width="50%" class="table table-striped table-condensed">
+      	<thead>
+      		<th><h3>Permanent Address</h3></th>
+      	</thead>
+      	<tbody>
+      		<tr>
+		        <th>Street Address 1 </th>
+		        <td><input type="text" name="regNumber"/></td>
+		        <th>Street Address 2 </th>
+		        <td><input type="text" name="regNumber"/></td>
+		        <th>Street Address 3 </th>
+		        <td><input type="text" name="regNumber"/></td>
+        	</tr>
+        	<tr>
+		        <th>City </th>
+		        <td><input type="text" name="regNumber"/></td>
+        	</tr>
+        	<tr>
+		        <th>State </th>
+		        <td><input type="text" name="regNumber"/></td>
+		        <th>Zipcode </th>
+		        <td><input type="text" name="regNumber"/></td>
+        	</tr>
+        	<tr>
+		        <th>Country </th>
+		        <td><input type="text" name="regNumber"/></td>
+        	</tr>        
+      	</tbody>
+      </table>
+      <div class="row">
+      	<div class="btn-group btn-group-lg" role="group">
+      		<table width="20%" height="30%" class="table table-striped table-condensed">
+		      	<tbody>
+		      		<div class="btn-group" role="group">
+		      			<tr>
+			      			<td> <button type="button" class="btn btn-primary">Submit</button></td>
+			      			<td><button type="button" class="btn btn-primary">Reset</button></td>
+			      			<td><button type="button" class="btn btn-primary">Next</button></td>
+			      		</tr>
+		      		</div>
+		      	</tbody>
+      		</table>	
+    		</div>      	
+      </div>      
+      </form>      
+      <script src="../../dist/js/jquery.js"></script>
+      <script src="../../dist/js/bootstrap.min.js"></script>
+    </div>
+  </body>
+</hmtl>
